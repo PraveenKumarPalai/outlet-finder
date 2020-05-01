@@ -32,7 +32,6 @@ router.get('/', async function (req, res, next) {
       formatedCoordinates[1],
       formatedCoordinates[0]
     ])) {
-      console.log(d)
       assignedOutlet = d;
     }
   })
@@ -40,7 +39,7 @@ router.get('/', async function (req, res, next) {
 });
 
 router.get('/search', (req, res, next) => {
-  res.render('index')
+  res.render('outlet')
 })
 
 module.exports = router;
